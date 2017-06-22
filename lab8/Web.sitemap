@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+  <siteMapNode url="restaurant.aspx" title="Kim's Restaurant"  description="">
+    <siteMapNode url="menu.apsx" title="Menu"  description="" />
+    <!--Location-->
+    <siteMapNode url="Location/Default.aspx" title="Location"  description="" >
+      <siteMapNode url="Location/Castro.aspx" title="Castro" description="" />
+      <siteMapNode url="Location/China.aspx" title="China Town" description="" />
+      <siteMapNode url="Location/Noh.aspx" title="Noh Hill" description="" />
+    </siteMapNode>
+    <!--Booking-->
+    <siteMapNode url="Booking/Default.aspx" title="Booking" description="" >
+      <siteMapNode url="Booking/ViewBooking.aspx" title="View Booking" description="" />
+    </siteMapNode>
+    <!--Menu-->
+    <siteMapNode url="About.aspx" title="About" description="" />
+  </siteMapNode>
+</siteMap>

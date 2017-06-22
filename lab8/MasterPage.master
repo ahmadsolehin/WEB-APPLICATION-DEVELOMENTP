@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title></title>
+    
+    <style type="text/css">
+        .style1 {
+            width: 100%;
+        }
+        .style2
+        {
+            width: 25%;
+        }
+        .style3
+        {
+            width: 25%;
+            height: 431px;
+        }
+        .style4
+        {
+            height: 431px;
+        }
+    </style>
+    
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        
+        <table class="style1">
+            <tr>
+                <td class="style2" style="background-color: #000000">
+                    &nbsp;</td>
+                <td style="background-color: #000000">
+                    <asp:Image ID="Image1" runat="server" Height="240px" ImageUrl="~/Logo_lab8.png" 
+                        Width="713px" />
+                </td>
+            </tr>
+            <tr>
+                <td class="style3" style="background-color: #FF3399" valign="top">
+                    <asp:TreeView ID="TreeView1" runat="server" DataSourceID="SiteMapDataSource1">
+                    </asp:TreeView>
+                    <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" />
+                </td>
+                <td class="style4">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" class="style1" style="background-color: Black; color: #FFFFFF;" 
+                    align="center">Kim&#39;s Copyright 2013</td>
+            </tr>
+        </table>
+        
+    </div>
+    </form>
+</body>
+</html>
